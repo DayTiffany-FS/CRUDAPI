@@ -1,0 +1,29 @@
+GET http://localhost:3170/songs
+
+###
+
+GET http://localhost:3170/songs/"id"
+
+###
+
+POST http://localhost:3170/songs
+Content-Type: application/json
+
+{
+    "title": "Funeral Portrait",
+    "band": "Voodoo Doll"
+}
+
+###
+
+DELETE http://localhost:3170/songs/"id""
+
+###
+
+PATCH http://localhost:3170/songs/"id"
+Content-Type: application/json
+
+{
+    "title": "",
+    "band": ""
+}
