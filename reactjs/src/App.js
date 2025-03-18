@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   const API_BASE = process.env.NODE_ENV === 'development' 
-    ? `http://localhost:3170` 
+    ? `http://localhost:3170/api/v1` 
     : process.env.REACT_APP_BASE_URL;
 
   let ignore = false;
